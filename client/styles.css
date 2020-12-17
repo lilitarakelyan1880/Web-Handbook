@@ -1,0 +1,100 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+.wrapper {
+	font-family: sans-serif;
+	height: 100%;
+}
+
+.appbar {
+	display: flex;
+	box-sizing: border-box; /* when we want to set padding, element's size is increasing, and to remove that, we use this */
+	/*flex-flow: row nowrap;*/
+	width: 100%;
+	background-color: #B24BE2;
+	font-size: 18px;
+	color: white;
+	justify-content: space-between; /* sets equal distances between elements, sticking them to walls*/
+}
+
+#appbar-title {
+	padding: 16px;
+}
+
+.appbar-items {
+	display: flex;
+	font-size: 14px;
+}
+
+.appbar-items > div { /* only direct child div*/
+	padding: 16px 8px 16px 8px; /* no 100% */
+	cursor: pointer;
+}
+
+.appbar-items > div:hover {
+	background-color: #A345CF;
+}
+
+.menu {
+	list-style-type: none;
+	font-size: 14px;
+	margin-top: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.menu > li {
+	padding: 4px 16px;
+	box-sizing: border-box;
+	width: auto;
+}
+
+.menu > li:hover {
+	background-color: #CDCDCD;
+}
+
+.sidebar {
+	background-color: #E0E0E0;
+	width: calc(100% / 12);
+	/*height: calc(100% - 53px);*/
+}
+
+
+.page {
+	display: flex;
+}
+
+.content {
+	background-color: #F4F4F4;	
+	width: calc(100% / 12 * 7);
+}
+
+.article-title {
+	margin: 0;
+	padding: 24px 0 0 24px;
+	/*font-size: 30px;
+	font-weight: bold;*/
+	font: bold 30px;
+}
+
+.text {
+	font-size: 14px;
+	margin: 0;
+	padding: 16px 24px 0 24px;
+	letter-spacing: 0.5px;
+	word-spacing: 1.5px;
+	line-height: 1.6;
+	text-indent: 24px;
+}
+
+.bar-right {
+	width: calc(100% / 3);
+}
